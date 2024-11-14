@@ -22,7 +22,7 @@ model = LogisticRegression(multi_class='multinomial', max_iter=1000)
 model.fit(X_train_tfidf, y_train)
 
 y_pred = model.predict(X_val_tfidf)
-print(classification_report(y_val, y_pred, zero_division=1))
+# print(classification_report(y_val, y_pred, zero_division=1))
 
 test_data['Predicted_Genre'] = model.predict(X_test_tfidf)
 
