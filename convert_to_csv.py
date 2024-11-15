@@ -2,7 +2,7 @@ import pandas as pd
 import re
 
 # Read the text file with ' ::: ' as the delimiter, no headers initially
-df = pd.read_csv(r"C:\Users\Aryan Tambe\Documents\GitHub\Movie-genre-prediction\Genre Classification Dataset\train_data.txt", sep=" ::: ", engine="python", header=None)
+df = pd.read_csv(r"Genre Classification Dataset\train_data.txt", sep=" ::: ", engine="python", header=None)
 
 # Set column names
 df.columns = ["ID", "Title", "Genre", "Description"]
